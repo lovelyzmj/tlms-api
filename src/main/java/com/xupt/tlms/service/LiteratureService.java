@@ -21,4 +21,6 @@ public interface LiteratureService {
 
     boolean updateLiterature(Literature literature);//更新录入的文献信息
 
+    boolean getLiteratureByNameAndResearchId(String name,int researchId);
+
 }
