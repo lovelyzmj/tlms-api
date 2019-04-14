@@ -14,5 +14,6 @@ public interface ResearchService {
 
     boolean deleteResearchById(int id);//根据id删除该研究
 
+    //根据teamId查找研究方向
 
 }

@@ -10,6 +10,7 @@ public class NotesVo implements Serializable {
     private long createTime;//发表时间
     private int literatureId;//所属文献Id
     private String literatureName;//所属文献名称
+    private int commentNum;//笔记下的评论数
     private int status;//笔记状态 （0：公开  1：私有）
 
     public int getId() {
@@ -76,6 +77,14 @@ public class NotesVo implements Serializable {
         this.literatureId = literatureId;
     }
 
+    public int getCommentNum() {
+        return commentNum;
+    }
+
+    public void setCommentNum(int commentNum) {
+        this.commentNum = commentNum;
+    }
+
     @Override
     public String toString() {
         return "NotesVo{" +
@@ -86,6 +95,7 @@ public class NotesVo implements Serializable {
                 ", createTime=" + createTime +
                 ", literatureId=" + literatureId +
                 ", literatureName='" + literatureName + '\'' +
+                ", commentNum=" + commentNum +
                 ", status=" + status +
                 '}';
     }
