@@ -11,5 +11,6 @@ public interface NotestService {
     List<NotesVo> getNotesByliteratureId(int literatureId);//根据文献id查看该文件下所有笔记
     boolean updateNotes(Notes notes);//根据id 修改笔记内容或者状态
     boolean deleteNotes(int id);//删除笔记
+    NotesVo getById(int id);//根据id查找笔记详情
 
 }
