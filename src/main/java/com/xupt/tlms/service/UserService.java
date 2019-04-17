@@ -18,4 +18,6 @@ public interface UserService {
 
     public List<User> FindAllUserByTeamId(int teamId);//查看团队所有成员
 
+    public boolean findByUserName(String userName);//判断是否已经注册
+
 }

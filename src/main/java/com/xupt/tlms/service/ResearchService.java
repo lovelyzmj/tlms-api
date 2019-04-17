@@ -16,4 +16,6 @@ public interface ResearchService {
 
     //根据teamId查找研究方向
 
+    ResearchVo getResearchById(int id);//根据id查找研究方向信息
+
 }
