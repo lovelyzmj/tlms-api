@@ -51,6 +51,7 @@ public class ResearchVo implements Serializable {
         this.teamName = teamName;
     }
 
+
     @Override
     public String toString() {
         return "ReaserchVo{" +

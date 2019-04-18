@@ -11,10 +11,22 @@ public class Literature implements Serializable {
     private String author;//科技文献作者
     private long time;//入库时间
     private String path;// 科技文献路径
+    private String publish;//出版社
+    private String publishTime;//出版时间
     private String remarks; //科技文献摘要
+    private int userId;//上传者ID
+    private int status;//共享状态  0：不共享  1：共享
 
     public int getId() {
         return id;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public void setId(int id) {
@@ -61,12 +73,36 @@ public class Literature implements Serializable {
         this.path = path;
     }
 
+    public String getPublish() {
+        return publish;
+    }
+
+    public void setPublish(String publish) {
+        this.publish = publish;
+    }
+
+    public String getPublishTime() {
+        return publishTime;
+    }
+
+    public void setPublishTime(String publishTime) {
+        this.publishTime = publishTime;
+    }
+
     public String getRemarks() {
         return remarks;
     }
 
     public void setRemarks(String remarks) {
         this.remarks = remarks;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
 
     @Override
@@ -78,7 +114,11 @@ public class Literature implements Serializable {
                 ", author='" + author + '\'' +
                 ", time=" + time +
                 ", path='" + path + '\'' +
+                ", publish='" + publish + '\'' +
+                ", publishTime='" + publishTime + '\'' +
                 ", remarks='" + remarks + '\'' +
+                ", userId=" + userId +
+                ", status=" + status +
                 '}';
     }
 }

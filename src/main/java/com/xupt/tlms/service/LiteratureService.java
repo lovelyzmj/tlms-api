@@ -23,4 +23,11 @@ public interface LiteratureService {
 
     boolean getLiteratureByNameAndResearchId(String name,int researchId);
 
+    List<Literature> getLiteratureByName(String name);//根据文献名称检索文献
+
+    List<Literature> getLiteratureByAuthor(String author);//根据作者检索文献
+
+    List<Literature> getLiteratureByKeyWord(String keyword);//根据关键字检索文献
+
+
 }
