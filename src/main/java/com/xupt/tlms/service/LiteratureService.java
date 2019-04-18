@@ -29,5 +29,9 @@ public interface LiteratureService {
 
     List<Literature> getLiteratureByKeyWord(String keyword);//根据关键字检索文献
 
+    boolean updateLiteratureStatus(int id,int status);//更改文献的共享状态
+
+    List<Literature> getLiteratureByUserId(int userId);//获取自己上传的所有文献
+
 
 }
